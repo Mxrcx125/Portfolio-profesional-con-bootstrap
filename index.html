@@ -10,9 +10,6 @@
   <!-- Bootstrap 5.3 + Bootstrap Icons (CDN) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
-  <!-- Estilos propios (marca personal) SIEMPRE después de Bootstrap -->
-  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
@@ -73,9 +70,7 @@
             <img src="img/perfil.svg" alt="Foto de perfil de Marco García Ruiz" class="img-fluid rounded-circle shadow border border-4 border-primary-subtle w-75">
           </div>
           <div class="col-12 col-md-7 col-lg-8 text-center text-md-start">
-            <div class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-2 fw-semibold">
-              <i class="bi bi-mortarboard-fill me-1"></i> 2.º CFGS DAW · MEDAC
-            </div>
+            <span class="badge bg-primary mb-2">2.º CFGS DAW · MEDAC</span>
             <h1 class="display-4 fw-bold mb-2">Marco García Ruiz</h1>
             <p class="fs-4 text-secondary mb-3 fw-medium">Desarrollador Web Junior · Estudiante de DAW</p>
             <p class="lead text-body-secondary mb-4">
@@ -108,22 +103,17 @@
         <div class="row g-4">
           <!-- Card: Front-end -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="p-3 bg-primary-subtle text-primary rounded-3 me-3 fs-4">
-                    <i class="bi bi-window-sidebar"></i>
-                  </span>
-                  <h3 class="h5 card-title mb-0 fw-bold">Front-end</h3>
-                </div>
-                <p class="card-text text-secondary small mb-3">Maquetación semántica, diseño responsivo y lógica en el navegador:</p>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title mb-3">Front-end</h3>
+                <p class="card-text text-secondary small">Maquetación semántica y diseño web:</p>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-html text-danger me-1"></i>HTML5</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-css text-primary me-1"></i>CSS3</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-js text-warning me-1"></i>JavaScript ES6+</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-bootstrap-fill text-primary me-1"></i>Bootstrap 5.3</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-phone me-1"></i>Responsive Design</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-universal-access me-1"></i>Accesibilidad (WAI-ARIA)</span>
+                  <span class="badge bg-secondary">HTML5</span>
+                  <span class="badge bg-secondary">CSS3</span>
+                  <span class="badge bg-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">Bootstrap 5</span>
+                  <span class="badge bg-secondary">Responsive</span>
+                  <span class="badge bg-secondary">Accesibilidad</span>
                 </div>
               </div>
             </div>
@@ -131,20 +121,15 @@
 
           <!-- Card: Back-end -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="p-3 bg-success-subtle text-success rounded-3 me-3 fs-4">
-                    <i class="bi bi-server"></i>
-                  </span>
-                  <h3 class="h5 card-title mb-0 fw-bold">Back-end</h3>
-                </div>
-                <p class="card-text text-secondary small mb-3">Programación orientada a objetos, lógica de servidor y servicios web:</p>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title mb-3">Back-end</h3>
+                <p class="card-text text-secondary small">Lógica de servidor y programación:</p>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-cup-hot-fill text-danger me-1"></i>Java (POO)</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-php text-primary me-1"></i>PHP</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-arrow-left-right me-1"></i>APIs REST</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-diagram-3 me-1"></i>Patrón MVC</span>
+                  <span class="badge bg-secondary">Java (POO)</span>
+                  <span class="badge bg-secondary">PHP</span>
+                  <span class="badge bg-secondary">APIs REST</span>
+                  <span class="badge bg-secondary">Patrón MVC</span>
                 </div>
               </div>
             </div>
@@ -152,20 +137,15 @@
 
           <!-- Card: Bases de datos -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="p-3 bg-info-subtle text-info rounded-3 me-3 fs-4">
-                    <i class="bi bi-database-fill"></i>
-                  </span>
-                  <h3 class="h5 card-title mb-0 fw-bold">Bases de datos</h3>
-                </div>
-                <p class="card-text text-secondary small mb-3">Modelado relacional, integridad referencial y consultas estructuradas:</p>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title mb-3">Bases de datos</h3>
+                <p class="card-text text-secondary small">Modelado y consultas relacionales:</p>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-database me-1 text-primary"></i>MySQL</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-database-check me-1 text-info"></i>MariaDB</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-file-earmark-code me-1"></i>Consultas SQL</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-gear-wide-connected me-1"></i>phpMyAdmin</span>
+                  <span class="badge bg-secondary">MySQL</span>
+                  <span class="badge bg-secondary">MariaDB</span>
+                  <span class="badge bg-secondary">SQL</span>
+                  <span class="badge bg-secondary">phpMyAdmin</span>
                 </div>
               </div>
             </div>
@@ -173,22 +153,17 @@
 
           <!-- Card: Herramientas y QA -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="p-3 bg-warning-subtle text-warning-emphasis rounded-3 me-3 fs-4">
-                    <i class="bi bi-tools"></i>
-                  </span>
-                  <h3 class="h5 card-title mb-0 fw-bold">Herramientas &amp; Testing</h3>
-                </div>
-                <p class="card-text text-secondary small mb-3">Control de versiones, pruebas de software y entornos de trabajo:</p>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title mb-3">Herramientas &amp; Testing</h3>
+                <p class="card-text text-secondary small">Control de versiones y entornos:</p>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-git text-danger me-1"></i>Git</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-github me-1"></i>GitHub</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-check2-circle text-success me-1"></i>Selenium WebDriver</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-shield-check text-success me-1"></i>JUnit 5</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-terminal me-1"></i>VS Code</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-hdd-network me-1"></i>Apache / XAMPP</span>
+                  <span class="badge bg-secondary">Git</span>
+                  <span class="badge bg-secondary">GitHub</span>
+                  <span class="badge bg-secondary">Selenium</span>
+                  <span class="badge bg-secondary">JUnit 5</span>
+                  <span class="badge bg-secondary">VS Code</span>
+                  <span class="badge bg-secondary">Apache</span>
                 </div>
               </div>
             </div>
@@ -196,23 +171,18 @@
 
           <!-- Card: Idiomas -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="p-3 bg-danger-subtle text-danger rounded-3 me-3 fs-4">
-                    <i class="bi bi-translate"></i>
-                  </span>
-                  <h3 class="h5 card-title mb-0 fw-bold">Idiomas</h3>
-                </div>
-                <p class="card-text text-secondary small mb-3">Comunicación verbal y técnica en entornos de desarrollo:</p>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title mb-3">Idiomas</h3>
+                <p class="card-text text-secondary small">Nivel de idiomas:</p>
                 <ul class="list-unstyled mb-0">
                   <li class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="fw-semibold"><i class="bi bi-flag-fill text-primary me-2"></i>Español</span>
-                    <span class="badge bg-primary-subtle text-primary">Nativo</span>
+                    <span>Español</span>
+                    <span class="badge bg-secondary">Nativo</span>
                   </li>
                   <li class="d-flex justify-content-between align-items-center">
-                    <span class="fw-semibold"><i class="bi bi-flag-fill text-danger me-2"></i>Inglés</span>
-                    <span class="badge bg-secondary-subtle text-secondary">B1 · Técnico profesional</span>
+                    <span>Inglés</span>
+                    <span class="badge bg-secondary">B1 · Técnico</span>
                   </li>
                 </ul>
               </div>
@@ -221,21 +191,16 @@
 
           <!-- Card: Competencias Transversales -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="p-3 bg-secondary-subtle text-secondary-emphasis rounded-3 me-3 fs-4">
-                    <i class="bi bi-stars"></i>
-                  </span>
-                  <h3 class="h5 card-title mb-0 fw-bold">Competencias</h3>
-                </div>
-                <p class="card-text text-secondary small mb-3">Habilidades blandas orientadas al trabajo profesional y ágil:</p>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title mb-3">Competencias</h3>
+                <p class="card-text text-secondary small">Habilidades profesionales:</p>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-people-fill text-primary me-1"></i>Trabajo en equipo</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-lightbulb-fill text-warning me-1"></i>Resolución analítica</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-arrow-repeat text-success me-1"></i>Adaptabilidad</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-book-half text-info me-1"></i>Aprendizaje continuo</span>
-                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-eye-fill text-secondary me-1"></i>Atención al detalle</span>
+                  <span class="badge bg-secondary">Trabajo en equipo</span>
+                  <span class="badge bg-secondary">Resolución analítica</span>
+                  <span class="badge bg-secondary">Adaptabilidad</span>
+                  <span class="badge bg-secondary">Aprendizaje continuo</span>
+                  <span class="badge bg-secondary">Atención al detalle</span>
                 </div>
               </div>
             </div>
@@ -258,22 +223,21 @@
         <div class="row g-4">
           <!-- Proyecto 1: Codelab & Academia Web -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
+            <div class="card h-100 shadow-sm">
               <img src="img/proyecto-bootstrap.svg" alt="Captura del proyecto Codelab y Academia con Bootstrap 5" class="card-img-top img-fluid">
               <div class="card-body d-flex flex-column p-4">
                 <div class="mb-2">
-                  <span class="badge bg-primary-subtle text-primary">Front-end</span>
-                  <span class="badge bg-info-subtle text-info">Responsive</span>
+                  <span class="badge bg-primary">Front-end</span>
                 </div>
                 <h3 class="h5 card-title fw-bold">Codelab &amp; Academia Web</h3>
                 <p class="card-text text-secondary flex-grow-1">
                   Plataforma educativa con ejercicios progresivos de maquetación web moderna, sistema de rejilla Bootstrap 5.3, utilidades flexbox y componentes interactivos totalmente adaptables a móviles, tablets y escritorio.
                 </p>
                 <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge bg-secondary-subtle text-body-secondary">HTML5</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">CSS3</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">Bootstrap 5.3</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">HTML5</span>
+                  <span class="badge bg-secondary">CSS3</span>
+                  <span class="badge bg-secondary">Bootstrap 5</span>
+                  <span class="badge bg-secondary">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
                   <a href="https://mxrcx125.github.io/Bootstrap-introduccion-1/bootstrap-intro/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm flex-fill">
@@ -292,22 +256,21 @@
 
           <!-- Proyecto 2: Selenium & JUnit 5 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
+            <div class="card h-100 shadow-sm">
               <img src="img/proyecto-testing.svg" alt="Captura del proyecto de Automatización de Testing con Selenium y JUnit 5" class="card-img-top img-fluid">
               <div class="card-body d-flex flex-column p-4">
                 <div class="mb-2">
-                  <span class="badge bg-success-subtle text-success">QA &amp; Testing</span>
-                  <span class="badge bg-dark-subtle text-body">Java</span>
+                  <span class="badge bg-primary">Testing</span>
                 </div>
                 <h3 class="h5 card-title fw-bold">Testing con Selenium &amp; JUnit 5</h3>
                 <p class="card-text text-secondary flex-grow-1">
                   Batería de pruebas automatizadas end-to-end implementada sobre arquitecturas web. Automatización de navegación, comprobación de validación de formularios, aserciones funcionales y generación de reportes de ejecución.
                 </p>
                 <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge bg-secondary-subtle text-body-secondary">Java</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">Selenium</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">JUnit 5</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">Maven</span>
+                  <span class="badge bg-secondary">Java</span>
+                  <span class="badge bg-secondary">Selenium</span>
+                  <span class="badge bg-secondary">JUnit 5</span>
+                  <span class="badge bg-secondary">Maven</span>
                 </div>
                 <div class="d-flex gap-2">
                   <a href="https://github.com/Mxrcx125/Selenium-y-JUnit-5#readme" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm flex-fill">
@@ -326,22 +289,21 @@
 
           <!-- Proyecto 3: Portal Web y Gestión PHP -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-body">
+            <div class="card h-100 shadow-sm">
               <img src="img/proyecto-gestion.svg" alt="Captura del proyecto de Portal Web y Panel de Gestión con PHP y MySQL" class="card-img-top img-fluid">
               <div class="card-body d-flex flex-column p-4">
                 <div class="mb-2">
-                  <span class="badge bg-info-subtle text-info">Full-stack</span>
-                  <span class="badge bg-primary-subtle text-primary">PHP / SQL</span>
+                  <span class="badge bg-primary">Full-stack</span>
                 </div>
                 <h3 class="h5 card-title fw-bold">Portal Web &amp; Gestión PHP</h3>
                 <p class="card-text text-secondary flex-grow-1">
                   Aplicación web con autenticación de usuarios, roles de acceso, operaciones CRUD completas contra base de datos relacional MySQL y panel de control administrativo con diseño responsivo.
                 </p>
                 <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge bg-secondary-subtle text-body-secondary">PHP</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">MySQL</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">HTML5 / CSS3</span>
-                  <span class="badge bg-secondary-subtle text-body-secondary">Apache</span>
+                  <span class="badge bg-secondary">PHP</span>
+                  <span class="badge bg-secondary">MySQL</span>
+                  <span class="badge bg-secondary">HTML5</span>
+                  <span class="badge bg-secondary">Apache</span>
                 </div>
                 <div class="d-flex gap-2">
                   <a href="https://github.com/Mxrcx125/proyecto_ln#readme" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm flex-fill">
@@ -462,12 +424,12 @@
           <div class="col-12 col-lg-10">
             <div class="accordion shadow-sm" id="accordionFormacion">
               <!-- Item 1: CFGS DAW -->
-              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <div class="accordion-item mb-3 rounded-3 overflow-hidden shadow-sm">
                 <h3 class="accordion-header" id="headingOne">
                   <button class="accordion-button fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="bi bi-mortarboard-fill text-primary me-3 fs-5"></i>
+                    <i class="bi bi-mortarboard me-3"></i>
                     <span>CFGS Desarrollo de Aplicaciones Web (DAW) · MEDAC</span>
-                    <span class="badge bg-primary-subtle text-primary ms-auto me-3 d-none d-sm-inline">2024 — Actualidad</span>
+                    <span class="badge bg-secondary ms-auto me-3 d-none d-sm-inline">2024 — Actualidad</span>
                   </button>
                 </h3>
                 <div id="collapseOne" class="accordion-collapse collapse show" role="region" aria-labelledby="headingOne" data-bs-parent="#accordionFormacion">
@@ -485,12 +447,12 @@
               </div>
 
               <!-- Item 2: Prácticas en Empresa -->
-              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <div class="accordion-item mb-3 rounded-3 overflow-hidden shadow-sm">
                 <h3 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
-                    <i class="bi bi-briefcase-fill text-success me-3 fs-5"></i>
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="bi bi-briefcase me-3"></i>
                     <span>Prácticas en Empresa (FFEOE / FCT) · Próxima Incorporación</span>
-                    <span class="badge bg-success-subtle text-success ms-auto me-3 d-none d-sm-inline">2026</span>
+                    <span class="badge bg-secondary ms-auto me-3 d-none d-sm-inline">2026</span>
                   </button>
                 </h3>
                 <div id="collapseTwo" class="accordion-collapse collapse" role="region" aria-labelledby="headingTwo" data-bs-parent="#accordionFormacion">
@@ -508,12 +470,12 @@
               </div>
 
               <!-- Item 3: Cursos y Certificaciones -->
-              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <div class="accordion-item mb-3 rounded-3 overflow-hidden shadow-sm">
                 <h3 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
-                    <i class="bi bi-patch-check-fill text-warning-emphasis me-3 fs-5"></i>
+                    <i class="bi bi-patch-check me-3"></i>
                     <span>Cursos Complementarios &amp; Especializaciones Técnicas</span>
-                    <span class="badge bg-warning-subtle text-warning-emphasis ms-auto me-3 d-none d-sm-inline">2025 — 2026</span>
+                    <span class="badge bg-secondary ms-auto me-3 d-none d-sm-inline">2025 — 2026</span>
                   </button>
                 </h3>
                 <div id="collapseThree" class="accordion-collapse collapse" role="region" aria-labelledby="headingThree" data-bs-parent="#accordionFormacion">
@@ -528,12 +490,12 @@
               </div>
 
               <!-- Item 4: Bachillerato -->
-              <div class="accordion-item border-0 rounded-3 overflow-hidden shadow-sm">
+              <div class="accordion-item rounded-3 overflow-hidden shadow-sm">
                 <h3 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour">
-                    <i class="bi bi-book-fill text-info me-3 fs-5"></i>
+                    <i class="bi bi-book me-3"></i>
                     <span>Bachillerato Científico-Tecnológico</span>
-                    <span class="badge bg-secondary-subtle text-secondary ms-auto me-3 d-none d-sm-inline">Educación Secundaria</span>
+                    <span class="badge bg-secondary ms-auto me-3 d-none d-sm-inline">Educación Secundaria</span>
                   </button>
                 </h3>
                 <div id="collapseFour" class="accordion-collapse collapse" role="region" aria-labelledby="headingFour" data-bs-parent="#accordionFormacion">
@@ -630,53 +592,33 @@
                 </p>
 
                 <!-- Enlace Email -->
-                <div class="d-flex align-items-start mb-4">
-                  <div class="p-3 bg-primary-subtle text-primary rounded-3 me-3 fs-5">
-                    <i class="bi bi-envelope-fill"></i>
-                  </div>
-                  <div>
-                    <h4 class="h6 mb-1 fw-bold">Email profesional</h4>
-                    <a href="mailto:marcogr1231@gmail.com" class="text-decoration-none text-body">
-                      marcogr1231@gmail.com
-                    </a>
-                  </div>
+                <div class="mb-3">
+                  <h4 class="h6 mb-1 fw-bold"><i class="bi bi-envelope me-2 text-primary"></i>Email profesional</h4>
+                  <a href="mailto:marcogr1231@gmail.com" class="text-decoration-none">
+                    marcogr1231@gmail.com
+                  </a>
                 </div>
 
                 <!-- Enlace GitHub -->
-                <div class="d-flex align-items-start mb-4">
-                  <div class="p-3 bg-dark-subtle text-body rounded-3 me-3 fs-5">
-                    <i class="bi bi-github"></i>
-                  </div>
-                  <div>
-                    <h4 class="h6 mb-1 fw-bold">GitHub</h4>
-                    <a href="https://github.com/Mxrcx125" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-body">
-                      github.com/Mxrcx125
-                    </a>
-                  </div>
+                <div class="mb-3">
+                  <h4 class="h6 mb-1 fw-bold"><i class="bi bi-github me-2"></i>GitHub</h4>
+                  <a href="https://github.com/Mxrcx125" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    github.com/Mxrcx125
+                  </a>
                 </div>
 
                 <!-- Enlace LinkedIn -->
-                <div class="d-flex align-items-start mb-4">
-                  <div class="p-3 bg-primary-subtle text-primary rounded-3 me-3 fs-5">
-                    <i class="bi bi-linkedin"></i>
-                  </div>
-                  <div>
-                    <h4 class="h6 mb-1 fw-bold">LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/marco-garcia-ruiz" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-body">
-                      linkedin.com/in/marco-garcia-ruiz
-                    </a>
-                  </div>
+                <div class="mb-3">
+                  <h4 class="h6 mb-1 fw-bold"><i class="bi bi-linkedin me-2 text-primary"></i>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/marco-garcia-ruiz" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    linkedin.com/in/marco-garcia-ruiz
+                  </a>
                 </div>
 
                 <!-- Ubicación y disponibilidad -->
-                <div class="d-flex align-items-start">
-                  <div class="p-3 bg-success-subtle text-success rounded-3 me-3 fs-5">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
-                  <div>
-                    <h4 class="h6 mb-1 fw-bold">Disponibilidad</h4>
-                    <p class="text-secondary mb-0 small">Madrid, España · Abierto a modalidad presencial, híbrida o en remoto.</p>
-                  </div>
+                <div class="mb-3">
+                  <h4 class="h6 mb-1 fw-bold"><i class="bi bi-geo-alt me-2 text-danger"></i>Disponibilidad</h4>
+                  <p class="text-secondary mb-0 small">Madrid, España · Abierto a presencial, híbrido o remoto.</p>
                 </div>
               </div>
 
