@@ -17,7 +17,7 @@ La idea de esta web es tener un sitio donde mostrar los proyectos que voy hacien
 - **HTML5:** Toda la estructura semántica de la página (nav, header, sections, footer).
 - **Bootstrap 5.3:** Para colocar todo en su sitio con el sistema de columnas (`container`, `row`, `col`), las tarjetas, los botones y que se adapte bien a móvil y ordenador sin meter CSS raro.
 - **Bootstrap Icons:** Los iconos para que quede más visual.
-- **JavaScript:** Un script sencillo para que el formulario avise si falta algún campo por rellenar y para el botón de modo claro / modo oscuro.
+- **JavaScript:** Un script sencillo para la validación del formulario de contacto y el cierre automático del menú en móviles.
 
 ---
 
@@ -27,7 +27,7 @@ La idea de esta web es tener un sitio donde mostrar los proyectos que voy hacien
 ├── index.html                 # La página principal
 ├── README.md                  # Este documento
 ├── js/
-│   └── main.js                # Validación del formulario y modo oscuro
+│   └── main.js                # Validación del formulario y menú móvil
 ├── img/
 │   ├── favicon.svg            # Icono de la pestaña del navegador
 │   ├── perfil.jpg             # Mi foto de perfil real
