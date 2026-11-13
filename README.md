@@ -30,7 +30,7 @@ La idea de esta web es tener un sitio donde mostrar los proyectos que voy hacien
 │   └── main.js                # Validación del formulario y modo oscuro
 ├── img/
 │   ├── favicon.svg            # Icono de la pestaña del navegador
-│   ├── perfil.svg             # Mi avatar de perfil
+│   ├── perfil.jpg             # Mi foto de perfil real
 │   ├── proyecto-bootstrap.svg # Captura de ejercicios de Bootstrap
 │   ├── proyecto-testing.svg   # Captura de pruebas con Selenium y Java
 │   └── proyecto-gestion.svg   # Captura del proyecto con PHP y MySQL
