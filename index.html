@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco García Ruiz · Desarrollador Web Junior</title>
+  <meta name="description" content="Portfolio profesional de Marco García Ruiz, desarrollador web junior y estudiante de 2.º de DAW. Proyectos, habilidades, formación y contacto.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Bootstrap 5.3 + Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Estilos propios (marca personal) SIEMPRE después de Bootstrap -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVBAR FIJA (sticky-top)
+       ============================================================ -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center text-primary" href="#sobre-mi">
+          <i class="bi bi-code-slash fs-4 me-2"></i>
+          <span>Marco García Ruiz</span>
+        </a>
+
+        <!-- Botón responsive menú móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#formacion">Formación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#contacto">Contacto</a>
+            </li>
+            <!-- Botón Modo Claro / Oscuro -->
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button id="themeToggle" class="btn btn-outline-secondary btn-sm rounded-circle p-2 d-flex align-items-center justify-content-center" type="button" aria-label="Alternar modo claro y oscuro" style="width: 36px; height: 36px;">
+                <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         SECCIÓN: PORTADA · SOBRE MÍ (id="sobre-mi")
+         ============================================================ -->
+    <section id="sobre-mi" class="py-5 bg-body-tertiary">
+      <div class="container py-lg-4">
+        <div class="row align-items-center gy-4">
+          <div class="col-12 col-md-5 col-lg-4 text-center">
+            <img src="img/perfil.svg" alt="Foto de perfil de Marco García Ruiz" class="img-fluid rounded-circle shadow border border-4 border-primary-subtle profile-avatar">
+          </div>
+          <div class="col-12 col-md-7 col-lg-8 text-center text-md-start">
+            <div class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-2 fw-semibold">
+              <i class="bi bi-mortarboard-fill me-1"></i> 2.º CFGS DAW · MEDAC
+            </div>
+            <h1 class="display-4 fw-bold mb-2">Marco García Ruiz</h1>
+            <p class="fs-4 text-secondary mb-3 fw-medium">Desarrollador Web Junior · Estudiante de DAW</p>
+            <p class="lead text-body-secondary mb-4">
+              Apasionado por el desarrollo web moderno, la maquetación semántica y la creación de interfaces limpias, accesibles e intuitivas. Especializado en el ecosistema front-end con <strong>HTML5, CSS3, JavaScript</strong> y <strong>Bootstrap 5</strong>, complementado con bases sólidas en desarrollo back-end en <strong>Java</strong> y <strong>PHP</strong>. Con ilusión y compromiso de aportar valor técnico en mis próximas prácticas en empresa (FFEOE / FCT).
+            </p>
+            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+              <a href="#proyectos" class="btn btn-primary btn-lg shadow-sm">
+                <i class="bi bi-briefcase-fill me-2"></i>Ver proyectos
+              </a>
+              <a href="docs/cv.pdf" download="CV-Marco-Garcia-Ruiz.pdf" class="btn btn-outline-secondary btn-lg shadow-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN: HABILIDADES (id="habilidades")
+         ============================================================ -->
+    <section id="habilidades" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold">Habilidades y Tecnologías</h2>
+          <p class="text-secondary lead">Herramientas y competencias adquiridas durante mi formación técnica y proyectos personales.</p>
+          <hr class="w-25 mx-auto text-primary border-2 opacity-75">
+        </div>
+
+        <div class="row g-4">
+          <!-- Card: Front-end -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-body">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="p-3 bg-primary-subtle text-primary rounded-3 me-3 fs-4">
+                    <i class="bi bi-window-sidebar"></i>
+                  </span>
+                  <h3 class="h5 card-title mb-0 fw-bold">Front-end</h3>
+                </div>
+                <p class="card-text text-secondary small mb-3">Maquetación semántica, diseño responsivo y lógica en el navegador:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-html text-danger me-1"></i>HTML5</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-css text-primary me-1"></i>CSS3</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-js text-warning me-1"></i>JavaScript ES6+</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-bootstrap-fill text-primary me-1"></i>Bootstrap 5.3</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-phone me-1"></i>Responsive Design</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-universal-access me-1"></i>Accesibilidad (WAI-ARIA)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Back-end -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-body">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="p-3 bg-success-subtle text-success rounded-3 me-3 fs-4">
+                    <i class="bi bi-server"></i>
+                  </span>
+                  <h3 class="h5 card-title mb-0 fw-bold">Back-end</h3>
+                </div>
+                <p class="card-text text-secondary small mb-3">Programación orientada a objetos, lógica de servidor y servicios web:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-cup-hot-fill text-danger me-1"></i>Java (POO)</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-filetype-php text-primary me-1"></i>PHP</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-arrow-left-right me-1"></i>APIs REST</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-diagram-3 me-1"></i>Patrón MVC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Bases de datos -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-body">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="p-3 bg-info-subtle text-info rounded-3 me-3 fs-4">
+                    <i class="bi bi-database-fill"></i>
+                  </span>
+                  <h3 class="h5 card-title mb-0 fw-bold">Bases de datos</h3>
+                </div>
+                <p class="card-text text-secondary small mb-3">Modelado relacional, integridad referencial y consultas estructuradas:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-database me-1 text-primary"></i>MySQL</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-database-check me-1 text-info"></i>MariaDB</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-file-earmark-code me-1"></i>Consultas SQL</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-gear-wide-connected me-1"></i>phpMyAdmin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Herramientas y QA -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-body">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="p-3 bg-warning-subtle text-warning-emphasis rounded-3 me-3 fs-4">
+                    <i class="bi bi-tools"></i>
+                  </span>
+                  <h3 class="h5 card-title mb-0 fw-bold">Herramientas &amp; Testing</h3>
+                </div>
+                <p class="card-text text-secondary small mb-3">Control de versiones, pruebas de software y entornos de trabajo:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-git text-danger me-1"></i>Git</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-github me-1"></i>GitHub</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-check2-circle text-success me-1"></i>Selenium WebDriver</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-shield-check text-success me-1"></i>JUnit 5</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-terminal me-1"></i>VS Code</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-hdd-network me-1"></i>Apache / XAMPP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Idiomas -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-body">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="p-3 bg-danger-subtle text-danger rounded-3 me-3 fs-4">
+                    <i class="bi bi-translate"></i>
+                  </span>
+                  <h3 class="h5 card-title mb-0 fw-bold">Idiomas</h3>
+                </div>
+                <p class="card-text text-secondary small mb-3">Comunicación verbal y técnica en entornos de desarrollo:</p>
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="fw-semibold"><i class="bi bi-flag-fill text-primary me-2"></i>Español</span>
+                    <span class="badge bg-primary-subtle text-primary">Nativo</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold"><i class="bi bi-flag-fill text-danger me-2"></i>Inglés</span>
+                    <span class="badge bg-secondary-subtle text-secondary">B1 · Técnico profesional</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Competencias Transversales -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-body">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="p-3 bg-secondary-subtle text-secondary-emphasis rounded-3 me-3 fs-4">
+                    <i class="bi bi-stars"></i>
+                  </span>
+                  <h3 class="h5 card-title mb-0 fw-bold">Competencias</h3>
+                </div>
+                <p class="card-text text-secondary small mb-3">Habilidades blandas orientadas al trabajo profesional y ágil:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-people-fill text-primary me-1"></i>Trabajo en equipo</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-lightbulb-fill text-warning me-1"></i>Resolución analítica</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-arrow-repeat text-success me-1"></i>Adaptabilidad</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-book-half text-info me-1"></i>Aprendizaje continuo</span>
+                  <span class="badge bg-body-secondary text-body border px-2 py-2"><i class="bi bi-eye-fill text-secondary me-1"></i>Atención al detalle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN: PROYECTOS (id="proyectos")
+         ============================================================ -->
+    <section id="proyectos" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold">Proyectos Destacados</h2>
+          <p class="text-secondary lead">Selección de proyectos de desarrollo web y control de calidad con código fuente en GitHub.</p>
+          <hr class="w-25 mx-auto text-primary border-2 opacity-75">
+        </div>
+
+        <div class="row g-4">
+          <!-- Proyecto 1: Codelab & Academia Web -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 card-project bg-body">
+              <img src="img/proyecto-bootstrap.svg" alt="Captura del proyecto Codelab y Academia con Bootstrap 5" class="card-img-top card-project-img img-fluid">
+              <div class="card-body d-flex flex-column p-4">
+                <div class="mb-2">
+                  <span class="badge bg-primary-subtle text-primary">Front-end</span>
+                  <span class="badge bg-info-subtle text-info">Responsive</span>
+                </div>
+                <h3 class="h5 card-title fw-bold">Codelab &amp; Academia Web</h3>
+                <p class="card-text text-secondary flex-grow-1">
+                  Plataforma educativa con ejercicios progresivos de maquetación web moderna, sistema de rejilla Bootstrap 5.3, utilidades flexbox y componentes interactivos totalmente adaptables a móviles, tablets y escritorio.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body-secondary">HTML5</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">CSS3</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">Bootstrap 5.3</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">JavaScript</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://mxrcx125.github.io/Bootstrap-introduccion-1/bootstrap-intro/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm flex-fill">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                  </a>
+                  <a href="https://github.com/Mxrcx125/Bootstrap-introduccion-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm flex-fill">
+                    <i class="bi bi-github me-1"></i>Código
+                  </a>
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto1" aria-label="Ver detalles de Codelab &amp; Academia Web">
+                    <i class="bi bi-info-circle"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Selenium & JUnit 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 card-project bg-body">
+              <img src="img/proyecto-testing.svg" alt="Captura del proyecto de Automatización de Testing con Selenium y JUnit 5" class="card-img-top card-project-img img-fluid">
+              <div class="card-body d-flex flex-column p-4">
+                <div class="mb-2">
+                  <span class="badge bg-success-subtle text-success">QA &amp; Testing</span>
+                  <span class="badge bg-dark-subtle text-body">Java</span>
+                </div>
+                <h3 class="h5 card-title fw-bold">Testing con Selenium &amp; JUnit 5</h3>
+                <p class="card-text text-secondary flex-grow-1">
+                  Batería de pruebas automatizadas end-to-end implementada sobre arquitecturas web. Automatización de navegación, comprobación de validación de formularios, aserciones funcionales y generación de reportes de ejecución.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body-secondary">Java</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">Selenium</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">JUnit 5</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">Maven</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/Mxrcx125/Selenium-y-JUnit-5#readme" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm flex-fill">
+                    <i class="bi bi-book me-1"></i>Docs
+                  </a>
+                  <a href="https://github.com/Mxrcx125/Selenium-y-JUnit-5" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm flex-fill">
+                    <i class="bi bi-github me-1"></i>Código
+                  </a>
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto2" aria-label="Ver detalles de Testing con Selenium">
+                    <i class="bi bi-info-circle"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Portal Web y Gestión PHP -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 card-project bg-body">
+              <img src="img/proyecto-gestion.svg" alt="Captura del proyecto de Portal Web y Panel de Gestión con PHP y MySQL" class="card-img-top card-project-img img-fluid">
+              <div class="card-body d-flex flex-column p-4">
+                <div class="mb-2">
+                  <span class="badge bg-info-subtle text-info">Full-stack</span>
+                  <span class="badge bg-primary-subtle text-primary">PHP / SQL</span>
+                </div>
+                <h3 class="h5 card-title fw-bold">Portal Web &amp; Gestión PHP</h3>
+                <p class="card-text text-secondary flex-grow-1">
+                  Aplicación web con autenticación de usuarios, roles de acceso, operaciones CRUD completas contra base de datos relacional MySQL y panel de control administrativo con diseño responsivo.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body-secondary">PHP</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">MySQL</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">HTML5 / CSS3</span>
+                  <span class="badge bg-secondary-subtle text-body-secondary">Apache</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/Mxrcx125/proyecto_ln#readme" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm flex-fill">
+                    <i class="bi bi-book me-1"></i>Docs
+                  </a>
+                  <a href="https://github.com/Mxrcx125/proyecto_ln" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm flex-fill">
+                    <i class="bi bi-github me-1"></i>Código
+                  </a>
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto3" aria-label="Ver detalles de Portal Web y Gestión PHP">
+                    <i class="bi bi-info-circle"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals de Detalle de Proyectos (Componente JS) -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" role="dialog" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5 fw-bold" id="modalProyecto1Label">Codelab &amp; Academia Web con Bootstrap 5</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/proyecto-bootstrap.svg" alt="Detalle del proyecto Bootstrap" class="img-fluid rounded mb-3">
+            <p>
+              Este proyecto reúne una suite de ejercicios prácticos guiados para dominar la maquetación web con Bootstrap 5.3. Se implementó una jerarquía completa de componentes, sistemas de cuadrículas dinámicas para múltiples dispositivos y un codelab interactivo para una academia tecnológica.
+            </p>
+            <h4 class="h6 fw-bold">Puntos clave desarrollados:</h4>
+            <ul>
+              <li>Rejilla adaptativa con breakpoints estándar (sm, md, lg, xl).</li>
+              <li>Componentes dinámicos: navbars colapsables, cards estructuradas y formularios accesibles.</li>
+              <li>Validación de formularios en cliente mediante utilidades de Bootstrap y JavaScript nativo.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="https://mxrcx125.github.io/Bootstrap-introduccion-1/bootstrap-intro/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Abrir Demo</a>
+            <a href="https://github.com/Mxrcx125/Bootstrap-introduccion-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Repositorio GitHub</a>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modalProyecto2" tabindex="-1" role="dialog" aria-labelledby="modalProyecto2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5 fw-bold" id="modalProyecto2Label">Automatización de Testing con Selenium &amp; JUnit 5</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/proyecto-testing.svg" alt="Detalle del proyecto de Testing" class="img-fluid rounded mb-3">
+            <p>
+              Desarrollo de un entorno robusto de pruebas funcionales para asegurar la calidad y estabilidad de aplicaciones web. Utilizando Selenium WebDriver en conjunto con JUnit 5, se simulan flujos reales de navegación de usuario, interacciones complejas con elementos DOM y comprobación de aserciones.
+            </p>
+            <h4 class="h6 fw-bold">Puntos clave desarrollados:</h4>
+            <ul>
+              <li>Automatización de flujos de login, validación de formularios y navegación responsiva.</li>
+              <li>Patrones de diseño orientados a pruebas mantenibles y escalables.</li>
+              <li>Ejecución de suites de regresión y generación de reportes de cobertura.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/Mxrcx125/Selenium-y-JUnit-5" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Ver en GitHub</a>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modalProyecto3" tabindex="-1" role="dialog" aria-labelledby="modalProyecto3Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5 fw-bold" id="modalProyecto3Label">Portal Web Dinámico y Panel de Gestión (PHP &amp; MySQL)</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/proyecto-gestion.svg" alt="Detalle del proyecto de Gestión PHP y MySQL" class="img-fluid rounded mb-3">
+            <p>
+              Solución integral para gestión de entidades y usuarios con backend en PHP y persistencia en bases de datos relacionales MySQL. El sistema permite el ciclo de vida completo de los registros (Create, Read, Update, Delete) con control de sesiones y saneamiento de entradas.
+            </p>
+            <h4 class="h6 fw-bold">Puntos clave desarrollados:</h4>
+            <ul>
+              <li>Arquitectura estructurada basada en separación de responsabilidades (MVC).</li>
+              <li>Consultas preparadas con PDO para prevención de inyecciones SQL.</li>
+              <li>Panel de control con tablas dinámicas y filtros de búsqueda.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/Mxrcx125/proyecto_ln" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Ver en GitHub</a>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECCIÓN: FORMACIÓN Y EXPERIENCIA (id="formacion")
+         ============================================================ -->
+    <section id="formacion" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold">Formación y Experiencia</h2>
+          <p class="text-secondary lead">Mi trayectoria académica, certificaciones y preparación para el sector profesional.</p>
+          <hr class="w-25 mx-auto text-primary border-2 opacity-75">
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="accordion shadow-sm" id="accordionFormacion">
+              <!-- Item 1: CFGS DAW -->
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-mortarboard-fill text-primary me-3 fs-5"></i>
+                    <span>CFGS Desarrollo de Aplicaciones Web (DAW) · MEDAC</span>
+                    <span class="badge bg-primary-subtle text-primary ms-auto me-3 d-none d-sm-inline">2024 — Actualidad</span>
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" role="region" aria-labelledby="headingOne" data-bs-parent="#accordionFormacion">
+                  <div class="accordion-body bg-body-tertiary">
+                    <p class="mb-2"><strong>Centro Educativo:</strong> Instituto Oficial de Formación Profesional MEDAC.</p>
+                    <p class="mb-2"><strong>Módulos y competencias destacadas:</strong></p>
+                    <ul class="mb-0">
+                      <li><strong>Diseño de Interfaces Web:</strong> Usabilidad, maquetación CSS3 avanzada, Bootstrap 5.3, diseño adaptativo y accesibilidad web.</li>
+                      <li><strong>Desarrollo Web en Entorno Cliente:</strong> JavaScript ES6+, manipulación del DOM, programación asíncrona y consumo de APIs.</li>
+                      <li><strong>Desarrollo Web en Entorno Servidor:</strong> Programación backend con PHP y Java, patrones MVC y seguridad web.</li>
+                      <li><strong>Bases de Datos &amp; Sistemas Informáticos:</strong> Diseño relacional, SQL, MySQL, administración de servidores y despliegue de aplicaciones.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Prácticas en Empresa -->
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                    <i class="bi bi-briefcase-fill text-success me-3 fs-5"></i>
+                    <span>Prácticas en Empresa (FFEOE / FCT) · Próxima Incorporación</span>
+                    <span class="badge bg-success-subtle text-success ms-auto me-3 d-none d-sm-inline">2026</span>
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" role="region" aria-labelledby="headingTwo" data-bs-parent="#accordionFormacion">
+                  <div class="accordion-body bg-body-tertiary">
+                    <p class="mb-2">
+                      Fase formativa práctica orientada a la integración en empresas tecnológicas y departamentos de desarrollo de software.
+                    </p>
+                    <ul class="mb-0">
+                      <li>Disponibilidad para incorporarme en equipos multidisciplinares de desarrollo web (frontend o full-stack junior).</li>
+                      <li>Capacidad de resolución de incidencias, trabajo con metodologías ágiles (Scrum) y control de versiones con Git.</li>
+                      <li>Gran motivación por aprender nuevas tecnologías y buenas prácticas de ingeniería de software.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Cursos y Certificaciones -->
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+                    <i class="bi bi-patch-check-fill text-warning-emphasis me-3 fs-5"></i>
+                    <span>Cursos Complementarios &amp; Especializaciones Técnicas</span>
+                    <span class="badge bg-warning-subtle text-warning-emphasis ms-auto me-3 d-none d-sm-inline">2025 — 2026</span>
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" role="region" aria-labelledby="headingThree" data-bs-parent="#accordionFormacion">
+                  <div class="accordion-body bg-body-tertiary">
+                    <ul class="mb-0">
+                      <li class="mb-2"><strong>Automatización de Pruebas Web con Selenium WebDriver &amp; JUnit 5:</strong> Creación de suites de pruebas funcionales y testing unitario.</li>
+                      <li class="mb-2"><strong>Maquetación Responsiva con Bootstrap 5 &amp; Flexbox:</strong> Creación de layouts complejos y sitios web adaptables.</li>
+                      <li><strong>Control de Versiones y Flujo de Trabajo en GitHub:</strong> Ramas, pull requests, despliegue continuo con GitHub Pages y colaboración en equipo.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Bachillerato -->
+              <div class="accordion-item border-0 rounded-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour">
+                    <i class="bi bi-book-fill text-info me-3 fs-5"></i>
+                    <span>Bachillerato Científico-Tecnológico</span>
+                    <span class="badge bg-secondary-subtle text-secondary ms-auto me-3 d-none d-sm-inline">Educación Secundaria</span>
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" role="region" aria-labelledby="headingFour" data-bs-parent="#accordionFormacion">
+                  <div class="accordion-body bg-body-tertiary">
+                    <p class="mb-0">
+                      Formación con base en matemáticas, física y tecnología industrial, aportando pensamiento lógico, capacidad de abstracción y rigor analítico en la resolución de problemas técnicos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN: CONTACTO (id="contacto")
+         ============================================================ -->
+    <section id="contacto" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold">Contacto</h2>
+          <p class="text-secondary lead">¿Quieres hablar sobre una oportunidad laboral, prácticas o colaborar en un proyecto? ¡Escríbeme!</p>
+          <hr class="w-25 mx-auto text-primary border-2 opacity-75">
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Columna: Formulario -->
+          <div class="col-12 col-lg-7">
+            <div class="card border-0 shadow-sm p-4 p-md-5 bg-body">
+              <h3 class="h4 fw-bold mb-4">Envíame un mensaje</h3>
+
+              <!-- Mensaje de éxito tras envío -->
+              <div id="formSuccessAlert" class="alert alert-success d-none alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>¡Gracias por tu mensaje!</strong> Me pondré en contacto contigo a la mayor brevedad posible.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              </div>
+
+              <form class="needs-validation" novalidate>
+                <!-- Nombre -->
+                <div class="mb-3">
+                  <label for="nombreContacto" class="form-label fw-semibold">Nombre y Apellidos <span class="text-danger">*</span></label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="nombreContacto" name="nombre" placeholder="Ej. Ana Gómez" required>
+                    <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="emailContacto" class="form-label fw-semibold">Correo Electrónico <span class="text-danger">*</span></label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="emailContacto" name="email" placeholder="nombre@ejemplo.com" required>
+                    <div class="invalid-feedback">Por favor, introduce un correo electrónico válido.</div>
+                  </div>
+                </div>
+
+                <!-- Asunto -->
+                <div class="mb-3">
+                  <label for="asuntoContacto" class="form-label fw-semibold">Asunto <span class="text-danger">*</span></label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-chat-left-text"></i></span>
+                    <input type="text" class="form-control" id="asuntoContacto" name="asunto" placeholder="Ej. Oportunidad de prácticas / Colaboración" required>
+                    <div class="invalid-feedback">Por favor, especifica el asunto de tu mensaje.</div>
+                  </div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="mb-4">
+                  <label for="mensajeContacto" class="form-label fw-semibold">Mensaje <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="mensajeContacto" name="mensaje" rows="5" placeholder="Escribe aquí tu propuesta o consulta detallada..." required></textarea>
+                  <div class="invalid-feedback">Por favor, redacta tu mensaje antes de enviar.</div>
+                </div>
+
+                <!-- Botón Enviar -->
+                <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm">
+                  <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Columna: Información de contacto directo -->
+          <div class="col-12 col-lg-5">
+            <div class="card border-0 shadow-sm p-4 p-md-5 bg-body h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h4 fw-bold mb-4">Información de contacto</h3>
+                <p class="text-secondary mb-4">
+                  También puedes contactar conmigo directamente a través de cualquiera de estos canales o revisar mi código en GitHub:
+                </p>
+
+                <!-- Enlace Email -->
+                <div class="d-flex align-items-start mb-4">
+                  <div class="p-3 bg-primary-subtle text-primary rounded-3 me-3 fs-5">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 mb-1 fw-bold">Email profesional</h4>
+                    <a href="mailto:marcogr1231@gmail.com" class="text-decoration-none text-body">
+                      marcogr1231@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Enlace GitHub -->
+                <div class="d-flex align-items-start mb-4">
+                  <div class="p-3 bg-dark-subtle text-body rounded-3 me-3 fs-5">
+                    <i class="bi bi-github"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 mb-1 fw-bold">GitHub</h4>
+                    <a href="https://github.com/Mxrcx125" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-body">
+                      github.com/Mxrcx125
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Enlace LinkedIn -->
+                <div class="d-flex align-items-start mb-4">
+                  <div class="p-3 bg-primary-subtle text-primary rounded-3 me-3 fs-5">
+                    <i class="bi bi-linkedin"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 mb-1 fw-bold">LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/marco-garcia-ruiz" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-body">
+                      linkedin.com/in/marco-garcia-ruiz
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Ubicación y disponibilidad -->
+                <div class="d-flex align-items-start">
+                  <div class="p-3 bg-success-subtle text-success rounded-3 me-3 fs-5">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 mb-1 fw-bold">Disponibilidad</h4>
+                    <p class="text-secondary mb-0 small">Madrid, España · Abierto a modalidad presencial, híbrida o en remoto.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Banner CV descargable -->
+              <div class="mt-4 p-3 bg-body-tertiary rounded-3 border text-center">
+                <p class="small text-secondary mb-2">¿Prefieres revisar mi trayectoria en papel?</p>
+                <a href="docs/cv.pdf" download="CV-Marco-Garcia-Ruiz.pdf" class="btn btn-outline-secondary btn-sm w-100">
+                  <i class="bi bi-file-earmark-pdf me-1"></i>Descargar currículum en PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="py-4 bg-body border-top">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <p class="mb-0 text-secondary">
+            &copy; 2026 <strong>Marco García Ruiz</strong> · Desarrollador Web Junior.
+          </p>
+          <p class="small text-body-secondary mb-0">
+            Última actualización: 13 de noviembre de 2026.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="d-inline-flex gap-3">
+            <a href="https://github.com/Mxrcx125" target="_blank" rel="noopener noreferrer" class="text-secondary fs-5 social-icon-btn" aria-label="Visitar el perfil de GitHub de Marco García Ruiz">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/marco-garcia-ruiz" target="_blank" rel="noopener noreferrer" class="text-secondary fs-5 social-icon-btn" aria-label="Visitar el perfil de LinkedIn de Marco García Ruiz">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:marcogr1231@gmail.com" class="text-secondary fs-5 social-icon-btn" aria-label="Enviar un correo electrónico a Marco García Ruiz">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS con Popper (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript propio -->
+  <script src="js/main.js"></script>
+</body>
+</html>

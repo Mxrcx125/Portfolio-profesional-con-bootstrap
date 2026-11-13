@@ -1,0 +1,79 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1304 >>
+stream
+BT
+/F1 18 Tf
+50 780 Td
+(Marco Garcia Ruiz - Curriculum Vitae) Tj
+0 -26 Td
+/F1 12 Tf
+(Desarrollador Web Junior | 2. CFGS DAW | MEDAC) Tj
+0 -20 Td
+(Email: marcogr1231@gmail.com | GitHub: https://github.com/Mxrcx125) Tj
+0 -35 Td
+/F1 14 Tf
+(PERFIL PROFESIONAL) Tj
+0 -18 Td
+/F1 10 Tf
+(Estudiante de Desarrollo de Aplicaciones Web enfocado en desarrollo frontend y backend.) Tj
+0 -15 Td
+(Comprometido con el codigo limpio, el diseno responsivo y la accesibilidad web.) Tj
+0 -30 Td
+/F1 14 Tf
+(FORMACION ACADEMICA) Tj
+0 -18 Td
+/F1 10 Tf
+(- CFGS Desarrollo de Aplicaciones Web (DAW) - Instituto MEDAC (2024 - 2026)) Tj
+0 -15 Td
+(- Bachillerato Cientifico-Tecnologico) Tj
+0 -30 Td
+/F1 14 Tf
+(HABILIDADES TECNICAS) Tj
+0 -18 Td
+/F1 10 Tf
+(- Frontend: HTML5 semantico, CSS3, JavaScript ES6+, Bootstrap 5.3, Responsive Design) Tj
+0 -15 Td
+(- Backend: Java, PHP, Arquitectura MVC, APIs REST) Tj
+0 -15 Td
+(- Bases de Datos: MySQL, MariaDB, Modelado relacional y consultas SQL) Tj
+0 -15 Td
+(- Herramientas: Git, GitHub, VS Code, Selenium WebDriver, JUnit 5) Tj
+0 -30 Td
+/F1 14 Tf
+(PROYECTOS DESTACADOS) Tj
+0 -18 Td
+/F1 10 Tf
+(- Codelab & Academia Web con Bootstrap 5.3) Tj
+0 -15 Td
+(- Automatizacion de Testing con Selenium WebDriver & JUnit 5) Tj
+0 -15 Td
+(- Portal Web Dinamico y Panel de Gestion con PHP & MySQL) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1667
+%%EOF

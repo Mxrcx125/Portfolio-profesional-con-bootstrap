@@ -1,0 +1,55 @@
+/* ============================================================
+   Estilos propios del portfolio (marca personal)
+   Autor: Marco García Ruiz
+   Usa el mínimo CSS posible: utilidades de Bootstrap primero.
+   ============================================================ */
+
+/* Desplazamiento suave al pulsar los enlaces del menú */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Espacio superior para que la navbar fija no tape los títulos de sección */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Estilos de realce y marca personal */
+.brand-gradient {
+  background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Transiciones suaves en tarjetas y botones */
+.card-project {
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.card-project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Imagen de proyecto en tarjetas con proporción cuidada */
+.card-project-img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+/* Efecto hover suave para enlaces sociales */
+.social-icon-btn {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-3px);
+  color: #0d6efd !important;
+}
+
+/* Avatar de perfil con tamaño máximo adecuado */
+.profile-avatar {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
