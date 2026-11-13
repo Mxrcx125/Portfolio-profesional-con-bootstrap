@@ -12,11 +12,11 @@ Portfolio profesional desarrollado como parte de la **Entrega 1 (UD6) — Estruc
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5:** Marcado semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), estructura accesible y validación W3C.
-- **CSS3 & Bootstrap 5.3:** Maquetación responsiva basada en rejilla (`container`, `row`, `col-*`), breakpoints (`sm`, `md`, `lg`), utilidades flexbox y espaciado.
-- **Bootstrap Icons 1.11:** Iconografía vectorial integrada por CDN.
-- **JavaScript (ES6+):** Validación de formularios interactiva, alternancia y persistencia de modo claro/oscuro en `localStorage`, control de componentes colapsables y ventanas modales de Bootstrap.
-- **Git & GitHub Pages:** Control de versiones distribuido y despliegue continuo automatizado.
+- **HTML5:** Marcado semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), jerarquía clara de encabezados (`h1` único, `h2`, `h3`) y validación W3C con 0 errores.
+- **Bootstrap 5.3:** Maquetación responsiva resuelta íntegramente mediante la rejilla oficial (`container`, `row`, `col-*`) y clases de utilidad nativas (espaciado, flexbox, tipografía y bordes), sin necesidad de CSS personalizado.
+- **Bootstrap Icons 1.11:** Iconografía vectorial cargada vía CDN.
+- **JavaScript (ES6+):** Validación de formularios interactiva en cliente (`needs-validation`), alternancia de modo claro/oscuro con guardado en `localStorage`, cierre automático del menú móvil y ventanas modales de Bootstrap.
+- **Git & GitHub Pages:** Control de versiones y despliegue continuo en la web.
 
 ---
 
@@ -24,40 +24,39 @@ Portfolio profesional desarrollado como parte de la **Entrega 1 (UD6) — Estruc
 
 ```text
 Portfolio-profesional-con-bootstrap/
-├── index.html              # Página principal con maquetación completa
-├── README.md               # Documentación y enlaces de entrega
-├── css/
-│   └── estilos.css         # Estilos personalizados y reglas de marca personal
+├── index.html                 # Página principal con maquetación completa en Bootstrap 5.3
+├── README.md                  # Documentación del proyecto y enlaces de entrega
 ├── js/
-│   └── main.js             # Lógica de validación, tema oscuro y eventos interactivos
+│   └── main.js                # Validación del formulario, modo claro/oscuro y navegación
 ├── img/
-│   ├── perfil.svg          # Avatar/foto profesional
-│   ├── proyecto-bootstrap.svg # Captura Codelab & Academia Web
-│   ├── proyecto-testing.svg   # Captura Suite de Testing Selenium/JUnit
-│   └── proyecto-gestion.svg   # Captura Portal de Gestión PHP/MySQL
+│   ├── favicon.svg            # Favicon del sitio web
+│   ├── perfil.svg             # Avatar profesional en diseño neutro y sobrio
+│   ├── proyecto-bootstrap.svg # Captura representativa: Codelab & Academia Web
+│   ├── proyecto-testing.svg   # Captura representativa: Suite de Pruebas Selenium/JUnit 5
+│   └── proyecto-gestion.svg   # Captura representativa: Portal de Gestión PHP/MySQL
 └── docs/
-    └── cv.pdf              # Currículum descargable en formato PDF
+    └── cv.pdf                 # Currículum Vitae descargable en formato PDF
 ```
 
 ---
 
-## 📋 Secciones Implementadas
+## 📋 Secciones del Portfolio
 
-1. **Navbar:** Fija en la parte superior (`sticky-top`), colapsable para dispositivos móviles, con enlaces a todas las secciones y botón selector de tema visual (claro / oscuro).
-2. **Portada · Sobre mí (`#sobre-mi`):** Foto profesional, nombre con único `<h1>`, titular formativo, presentación profesional y botones de acción rápida (*Ver proyectos* y *Descargar CV*).
-3. **Habilidades (`#habilidades`):** Tecnologías agrupadas por áreas (Front-end, Back-end, Bases de datos, Herramientas & Testing, Idiomas y Competencias) con badges e iconos.
-4. **Proyectos (`#proyectos`):** 3 tarjetas con imágenes representativas, descripciones técnicas reales, badges de tecnologías y enlaces directos a demos, documentación, repositorios en GitHub y modales explicativos.
-5. **Formación y Experiencia (`#formacion`):** Componente interactivo acordeón con detalle del CFGS DAW, preparación para prácticas FFEOE/FCT, certificaciones y estudios previos.
-6. **Contacto (`#contacto`):** Formulario estilizado con labels asociados, validación dinámica de campos (`was-validated`), feedback en tiempo real y enlaces directos a email, LinkedIn y GitHub.
-7. **Footer:** Copyright, enlaces de redes sociales con atributos de accesibilidad `aria-label` y fecha de última actualización.
+1. **Navbar:** Fija en la parte superior (`sticky-top`), colapsable para dispositivos móviles, con enlaces a todas las secciones y botón de alternancia entre modo claro y oscuro.
+2. **Portada · Sobre mí (`#sobre-mi`):** Avatar, nombre completo con el único `<h1>` del documento, titular formativo (*Desarrollador Web Junior · 2.º CFGS DAW*), presentación profesional y botones de acceso directo a proyectos y descarga de CV.
+3. **Habilidades (`#habilidades`):** Competencias agrupadas en tarjetas de diseño sobrio (Front-end, Back-end, Bases de datos, Herramientas & Testing, Idiomas y Competencias) con badges de Bootstrap.
+4. **Proyectos (`#proyectos`):** 3 proyectos con capturas, descripciones técnicas, badges de tecnologías y enlaces directos a demos, repositorios en GitHub y modales con información ampliada.
+5. **Formación y Experiencia (`#formacion`):** Acordeón interactivo con los módulos cursados en DAW (MEDAC), preparación para prácticas en empresa (FFEOE / FCT), certificaciones y bachillerato.
+6. **Contacto (`#contacto`):** Formulario maquetado con Bootstrap, labels asociados por `id`/`for`, validación visual y enlaces a email, GitHub y LinkedIn.
+7. **Footer:** Copyright, enlaces sociales con atributos `aria-label` de accesibilidad y fecha de última actualización.
 
 ---
 
-## 🚀 Despliegue en GitHub Pages
+## 🚀 Publicación en GitHub Pages
 
-1. Repositorio público configurado en `https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap`.
-2. En GitHub: **Settings → Pages → Source: Deploy from a branch → main / (root)**.
-3. La web se encuentra accesible en [https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/](https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/).
+1. Repositorio público configurado en GitHub.
+2. En los ajustes del repositorio: **Settings → Pages → Source: Deploy from a branch → main / (root)**.
+3. El portfolio se visualiza en: [https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/](https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/).
 
 ---
 
