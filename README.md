@@ -1,65 +1,54 @@
-# Portfolio Profesional · Marco García Ruiz
+# Mi Portfolio Web · Marco García Ruiz
 
-Portfolio profesional desarrollado como parte de la **Entrega 1 (UD6) — Estructura, contenido y maquetación** del módulo **Diseño de Interfaces Web (2.º DAW)** en **MEDAC**.
+¡Hola! 👋 Este es mi portfolio personal y profesional, creado para la **Entrega 1 de la asignatura Diseño de Interfaces Web** en 2.º de DAW (MEDAC).
 
-🔗 **Sitio Web Publicado (GitHub Pages):**  
+La idea de esta web es tener un sitio donde mostrar los proyectos que voy haciendo en clase, las tecnologías que manejo y que sirva de carta de presentación para las prácticas en empresa.
+
+🔗 **Web publicada en GitHub Pages:**  
 [https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/](https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/)
 
-📁 **Repositorio de GitHub:**  
+📁 **Repositorio en GitHub:**  
 [https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap](https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap)
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 💻 ¿Qué he usado para hacerlo?
 
-- **HTML5:** Marcado semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), jerarquía clara de encabezados (`h1` único, `h2`, `h3`) y validación W3C con 0 errores.
-- **Bootstrap 5.3:** Maquetación responsiva resuelta íntegramente mediante la rejilla oficial (`container`, `row`, `col-*`) y clases de utilidad nativas (espaciado, flexbox, tipografía y bordes), sin necesidad de CSS personalizado.
-- **Bootstrap Icons 1.11:** Iconografía vectorial cargada vía CDN.
-- **JavaScript (ES6+):** Validación de formularios interactiva en cliente (`needs-validation`), alternancia de modo claro/oscuro con guardado en `localStorage`, cierre automático del menú móvil y ventanas modales de Bootstrap.
-- **Git & GitHub Pages:** Control de versiones y despliegue continuo en la web.
+- **HTML5:** Toda la estructura semántica de la página (nav, header, sections, footer).
+- **Bootstrap 5.3:** Para colocar todo en su sitio con el sistema de columnas (`container`, `row`, `col`), las tarjetas, los botones y que se adapte bien a móvil y ordenador sin meter CSS raro.
+- **Bootstrap Icons:** Los iconos para que quede más visual.
+- **JavaScript:** Un script sencillo para que el formulario avise si falta algún campo por rellenar y para el botón de modo claro / modo oscuro.
 
 ---
 
-## 📂 Estructura del Repositorio
+## 📂 ¿Cómo está organizado?
 
 ```text
-Portfolio-profesional-con-bootstrap/
-├── index.html                 # Página principal con maquetación completa en Bootstrap 5.3
-├── README.md                  # Documentación del proyecto y enlaces de entrega
+├── index.html                 # La página principal
+├── README.md                  # Este documento
 ├── js/
-│   └── main.js                # Validación del formulario, modo claro/oscuro y navegación
+│   └── main.js                # Validación del formulario y modo oscuro
 ├── img/
-│   ├── favicon.svg            # Favicon del sitio web
-│   ├── perfil.svg             # Avatar profesional en diseño neutro y sobrio
-│   ├── proyecto-bootstrap.svg # Captura representativa: Codelab & Academia Web
-│   ├── proyecto-testing.svg   # Captura representativa: Suite de Pruebas Selenium/JUnit 5
-│   └── proyecto-gestion.svg   # Captura representativa: Portal de Gestión PHP/MySQL
+│   ├── favicon.svg            # Icono de la pestaña del navegador
+│   ├── perfil.svg             # Mi avatar de perfil
+│   ├── proyecto-bootstrap.svg # Captura de ejercicios de Bootstrap
+│   ├── proyecto-testing.svg   # Captura de pruebas con Selenium y Java
+│   └── proyecto-gestion.svg   # Captura del proyecto con PHP y MySQL
 └── docs/
-    └── cv.pdf                 # Currículum Vitae descargable en formato PDF
+    └── cv.pdf                 # Mi currículum para descargar
 ```
 
 ---
 
-## 📋 Secciones del Portfolio
+## 📄 Secciones de la página
 
-1. **Navbar:** Fija en la parte superior (`sticky-top`), colapsable para dispositivos móviles, con enlaces a todas las secciones y botón de alternancia entre modo claro y oscuro.
-2. **Portada · Sobre mí (`#sobre-mi`):** Avatar, nombre completo con el único `<h1>` del documento, titular formativo (*Desarrollador Web Junior · 2.º CFGS DAW*), presentación profesional y botones de acceso directo a proyectos y descarga de CV.
-3. **Habilidades (`#habilidades`):** Competencias agrupadas en tarjetas de diseño sobrio (Front-end, Back-end, Bases de datos, Herramientas & Testing, Idiomas y Competencias) con badges de Bootstrap.
-4. **Proyectos (`#proyectos`):** 3 proyectos con capturas, descripciones técnicas, badges de tecnologías y enlaces directos a demos, repositorios en GitHub y modales con información ampliada.
-5. **Formación y Experiencia (`#formacion`):** Acordeón interactivo con los módulos cursados en DAW (MEDAC), preparación para prácticas en empresa (FFEOE / FCT), certificaciones y bachillerato.
-6. **Contacto (`#contacto`):** Formulario maquetado con Bootstrap, labels asociados por `id`/`for`, validación visual y enlaces a email, GitHub y LinkedIn.
-7. **Footer:** Copyright, enlaces sociales con atributos `aria-label` de accesibilidad y fecha de última actualización.
-
----
-
-## 🚀 Publicación en GitHub Pages
-
-1. Repositorio público configurado en GitHub.
-2. En los ajustes del repositorio: **Settings → Pages → Source: Deploy from a branch → main / (root)**.
-3. El portfolio se visualiza en: [https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/](https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/).
+- **Inicio / Sobre mí:** Una pequeña presentación sobre mí, qué estoy estudiando y botones para ir directo a los proyectos o descargarte mi CV.
+- **Habilidades:** Las tecnologías que voy aprendiendo (frontend, backend, bases de datos y herramientas).
+- **Proyectos:** Tres proyectos reales que tengo subidos a mi GitHub, con capturas, explicación y enlaces.
+- **Formación:** Mi paso por el grado superior de DAW en MEDAC y estudios anteriores.
+- **Contacto:** Formulario para mandarme un mensaje y mis enlaces a GitHub, LinkedIn y correo.
 
 ---
 
 **Autor:** Marco García Ruiz  
-**Módulo:** Diseño de Interfaces Web (DAW)  
-**Fecha:** Noviembre 2026
+**Curso:** 2.º DAW · MEDAC
