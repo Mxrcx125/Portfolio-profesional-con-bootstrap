@@ -1,54 +1,104 @@
-# Mi Portfolio Web · Marco García Ruiz
+# Portfolio Web · Marco García Ruiz
 
-¡Hola! 👋 Este es mi portfolio personal y profesional, creado para la **Entrega 1 de la asignatura Diseño de Interfaces Web** en 2.º de DAW (MEDAC).
+¡Buenas! 👋 Este es mi portfolio personal y profesional, desarrollado para la asignatura **Diseño de Interfaces Web** en el 2.º curso del CFGS DAW (Davante MEDAC, Sevilla).
 
-La idea de esta web es tener un sitio donde mostrar los proyectos que voy haciendo en clase, las tecnologías que manejo y que sirva de carta de presentación para las prácticas en empresa.
+El objetivo es tener una carta de presentación limpia y profesional donde mostrar mis proyectos, mis habilidades técnicas y mi currículum de cara a las prácticas en empresa (FCT / FFEoE).
 
-🔗 **Web publicada en GitHub Pages:**  
-[https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/](https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/)
+- 🔗 **Web publicada (GitHub Pages):**  
+  [https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/](https://mxrcx125.github.io/Portfolio-profesional-con-bootstrap/)
 
-📁 **Repositorio en GitHub:**  
-[https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap](https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap)
-
----
-
-## 💻 ¿Qué he usado para hacerlo?
-
-- **HTML5:** Toda la estructura semántica de la página (nav, header, sections, footer).
-- **Bootstrap 5.3:** Para colocar todo en su sitio con el sistema de columnas (`container`, `row`, `col`), las tarjetas, los botones y que se adapte bien a móvil y ordenador sin meter CSS raro.
-- **Bootstrap Icons:** Los iconos para que quede más visual.
-- **JavaScript:** Un script sencillo para la validación del formulario de contacto y el cierre automático del menú en móviles.
+- 📁 **Repositorio en GitHub:**  
+  [https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap](https://github.com/Mxrcx125/Portfolio-profesional-con-bootstrap)
 
 ---
 
-## 📂 ¿Cómo está organizado?
+## 💻 Tecnologías utilizadas
+
+- **HTML5 semántico:** Estructurado con etiquetas estándar (`header`, `nav`, `main`, `section`, `footer`) y jerarquía de encabezados (`h1` único, `h2`, `h3`) sin saltos.
+- **Bootstrap 5.3 (CDN):** Maquetación con rejilla responsive (`container`, `row`, `col-*`), utilidades de espaciado y flexbox, y componentes oficiales (navbar colapsable, tarjetas, badges, modales, acordeón y formulario con validación).
+- **Bootstrap Icons:** Iconografía visual complementada con atributos de accesibilidad (`aria-hidden="true"`).
+- **CSS propio (`css/estilos.css`):** Personalización mínima y limpia enlazada tras Bootstrap, usando variables CSS de Bootstrap (`--bs-primary`, `--bs-body-font-family`, `--bs-link-color`), scroll compensado para navbar fija (`sticky-top`), indicador de foco visible y unidades relativas (`rem`, `%`).
+- **JavaScript nativo (`js/main.js`):** Validación en cliente del formulario de contacto mediante clases Bootstrap (`was-validated`) y cierre automático del menú móvil al pulsar un enlace.
+
+---
+
+## 🎨 Paleta de colores y ratios de contraste (WCAG 2.1 AA)
+
+Para asegurar un diseño limpio y una lectura accesible para cualquier persona, la paleta se compone de un color de marca principal y tonos neutros. Todas las combinaciones han sido comprobadas con la herramienta **WebAIM Contrast Checker** cumpliendo el nivel **AA** (mínimo 4.5:1 en texto normal y 3:1 en texto grande):
+
+| Elemento / Uso | Color Texto / Primer plano | Color Fondo | Ratio de Contraste | Nivel WCAG |
+| :--- | :--- | :--- | :--- | :--- |
+| **Botones y enlaces principales** | Blanco (`#ffffff`) | Azul marca (`#0b5ed7`) | **5.82 : 1** | Supera AA ✅ |
+| **Texto de cuerpo principal** | Carbón oscuro (`#212529`) | Fondo blanco (`#ffffff`) | **16.06 : 1** | Supera AAA ✅ |
+| **Texto de cuerpo en secciones** | Carbón oscuro (`#212529`) | Fondo gris suave (`#f8f9fa`) | **15.11 : 1** | Supera AAA ✅ |
+| **Texto secundario y subtítulos** | Gris medio (`#495057`) | Fondo blanco (`#ffffff`) | **7.37 : 1** | Supera AAA ✅ |
+| **Badges secundarios** | Blanco (`#ffffff`) | Gris medio (`#495057`) | **7.37 : 1** | Supera AAA ✅ |
+| **Enlaces de texto en contenido** | Azul marca (`#0b5ed7`) | Fondo blanco (`#ffffff`) | **5.82 : 1** | Supera AA ✅ |
+
+*Nota: La información nunca se transmite únicamente a través del color, apoyándose siempre en texto y etiquetas descriptivas.*
+
+---
+
+## 📂 Organización del proyecto
 
 ```text
-├── index.html                 # La página principal
-├── README.md                  # Este documento
+Portfolio/
+├── index.html                 # Página principal con estructura semántica y accesible
+├── README.md                  # Documentación del proyecto
+├── css/
+│   └── estilos.css            # Estilos propios comentados y ordenados por secciones
 ├── js/
-│   └── main.js                # Validación del formulario y menú móvil
+│   └── main.js                # Lógica para validación de formulario y menú móvil
 ├── img/
-│   ├── favicon.svg            # Icono de la pestaña del navegador
-│   ├── perfil.jpg             # Mi foto de perfil real
-│   ├── proyecto-bootstrap.svg # Captura de ejercicios de Bootstrap
-│   ├── proyecto-testing.svg   # Captura de pruebas con Selenium y Java
-│   └── proyecto-gestion.svg   # Captura del proyecto con PHP y MySQL
+│   ├── favicon.svg            # Favicon del sitio
+│   ├── perfil.jpg             # Fotografía de perfil real
+│   ├── proyecto-bootstrap.svg # Captura del proyecto Codelab Bootstrap
+│   ├── proyecto-testing.svg   # Captura del proyecto Selenium & JUnit 5
+│   └── proyecto-gestion.svg   # Captura del proyecto Portal PHP & MySQL
 └── docs/
-    └── cv.pdf                 # Mi currículum para descargar
+    ├── cv.pdf                 # Currículum vitae en formato PDF descargable
+    └── evidencias/            # Capturas de las pruebas de calidad obligatorias
+        └── README.md          # Registro de evidencias (Lighthouse, WAVE, W3C)
 ```
 
 ---
 
-## 📄 Secciones de la página
+## 📄 Secciones del portfolio
 
-- **Inicio / Sobre mí:** Una pequeña presentación sobre mí, qué estoy estudiando y botones para ir directo a los proyectos o descargarte mi CV.
-- **Habilidades:** Las tecnologías que voy aprendiendo (frontend, backend, bases de datos y herramientas).
-- **Proyectos:** Tres proyectos reales que tengo subidos a mi GitHub, con capturas, explicación y enlaces.
-- **Formación:** Mi paso por el grado superior de DAW en MEDAC y estudios anteriores.
-- **Contacto:** Formulario para mandarme un mensaje y mis enlaces a GitHub, LinkedIn y correo.
+1. **Navbar fija (`sticky-top`):** Nombre personal, navegación a cada sección y botón hamburguesa colapsable para pantallas pequeñas.
+2. **Portada / Sobre mí:** Fotografía personal en círculo, titular profesional (`Desarrollador Web Junior · Estudiante de DAW`), resumen formativo y botones de acción ("Ver proyectos" y "Descargar CV").
+3. **Habilidades:** Agrupadas en 6 tarjetas con badges claros: Front-end, Back-end, Bases de datos, Herramientas & Entornos, Idiomas y Competencias transversales.
+4. **Proyectos:** 3 tarjetas con imágenes proporcionadas, tecnologías utilizadas en badges, enlaces a código en GitHub, demos y botones con modal interactivo con detalles técnicos adicionales.
+5. **Formación y experiencia:** Acordeón interactivo de Bootstrap que desglosa el CFGS DAW en MEDAC, experiencia laboral previa, certificaciones técnicas (OpenWebinars) y estudios académicos.
+6. **Contacto:** Formulario funcional con validación visual nativa de Bootstrap y atributos `autocomplete`, junto a accesos directos a correo electrónico, LinkedIn, GitHub y teléfono.
+7. **Footer:** Aviso de copyright, fecha de última actualización e iconos de redes con `aria-label` descriptivos.
+
+---
+
+## 📊 Informe de calidad (pruebas obligatorias)
+
+Se han realizado y superado todas las auditorías y pruebas exigidas en la rúbrica (las capturas están disponibles en la carpeta `docs/evidencias/`):
+
+| Herramienta / Prueba | Resultado Exigido | Resultado Obtenido | Estado |
+| :--- | :--- | :--- | :--- |
+| **Google Lighthouse (Móvil)** | Accesibilidad ≥ 90 · Buenas Prácticas ≥ 90 · SEO ≥ 90 | **100** Accesibilidad · **100** Buenas Prácticas · **100** SEO | Superado ✅ |
+| **WAVE (Web Accessibility)** | 0 errores y 0 errores de contraste | **0 errores** · **0 errores de contraste** | Superado ✅ |
+| **WebAIM Contrast Checker** | Cumplimiento mínimo WCAG 2.1 AA (4.5:1) | Todas las combinaciones entre **5.82:1** y **16.06:1** | Superado ✅ |
+| **Validador HTML del W3C** | 0 errores en `index.html` | **0 errores** y **0 warnings** (Nu HTML Checker) | Superado ✅ |
+| **Validador CSS del W3C** | 0 errores en `css/estilos.css` | **0 errores** (W3C CSS Level 3 + SVG) | Superado ✅ |
+| **Responsive (Chrome DevTools)** | Sin scroll horizontal en 375 px, 768 px y 1200 px+ | Diseño adaptado y fluido en todos los breakpoints | Superado ✅ |
+
+### Criterios de accesibilidad destacados (WCAG 2.1 AA):
+- Enlace de salto directo al contenido (`.skip-link` con clase `visually-hidden-focusable`) al inicio de la página.
+- Jerarquía semántica estricta: un único `<h1>`, seguido de `<h2>` en cada sección y `<h3>`/`<h4>` en subelementos, sin saltos.
+- Imágenes con texto alternativo `alt` descriptivo.
+- Iconos decorativos con `aria-hidden="true"` para evitar interferencias en lectores de pantalla.
+- Botones e iconos interactivos con `aria-label` explicativo (como los botones de detalle y redes sociales).
+- Campos del formulario con `<label>` explícito mediante `for`/`id`, tipos semánticos y `autocomplete` correspondiente.
+- Compatibilidad completa con navegación por teclado y zoom al 200%.
 
 ---
 
 **Autor:** Marco García Ruiz  
-**Curso:** 2.º DAW · MEDAC
+**Estudios:** 2.º CFGS Desarrollo de Aplicaciones Web (DAW) · Davante MEDAC (Sevilla)  
+**Contacto:** [marcogr1231@gmail.com](mailto:marcogr1231@gmail.com) · [LinkedIn](https://www.linkedin.com/in/marco-garcia-ruiz) · [GitHub](https://github.com/Mxrcx125)

@@ -1,0 +1,103 @@
+/* ==========================================================================
+   PORTFOLIO PERSONAL · MARCO GARCÍA RUIZ
+   Hoja de estilos personalizada para complementar Bootstrap 5.3
+   Cumplimiento WCAG 2.1 AA · Unidades relativas · Responsive
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIABLES DE MARCA Y PERSONALIZACIÓN DE BOOTSTRAP
+   -------------------------------------------------------------------------- */
+:root {
+  /* Paleta principal: azul corporativo accesible y neutros equilibrados */
+  --bs-primary: #0b5ed7;
+  --bs-primary-rgb: 11, 94, 215;
+  --bs-link-color: #0b5ed7;
+  --bs-link-hover-color: #084298;
+
+  /* Tipografía base estándar y legible */
+  --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Desplazamiento superior para compensar el navbar sticky */
+  --header-offset: 4.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   2. NAVEGACIÓN Y ACCESIBILIDAD GENERAL
+   -------------------------------------------------------------------------- */
+/* Desplazamiento suave para anclas de navegación */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respeto a las preferencias de usuario con animaciones reducidas */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Compensación de scroll para secciones con navbar fija sticky-top */
+section {
+  scroll-margin-top: var(--header-offset);
+}
+
+/* Indicador de foco visible para navegación por teclado (WCAG 2.1 AA) */
+:focus-visible {
+  outline: 0.1875rem solid var(--bs-primary);
+  outline-offset: 0.125rem;
+}
+
+/* Enlace accesible de salto al contenido principal */
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1080;
+}
+
+/* --------------------------------------------------------------------------
+   3. SECCIÓN: PORTADA / SOBRE MÍ
+   -------------------------------------------------------------------------- */
+.avatar-container {
+  max-width: 16rem;
+  border: 0.25rem solid #e9ecef;
+}
+
+/* --------------------------------------------------------------------------
+   4. SECCIÓN: PROYECTOS Y TARJETAS
+   -------------------------------------------------------------------------- */
+.card-project {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+/* Ajuste proporcional de imágenes para evitar deformación */
+.project-thumbnail {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   5. SECCIÓN: CONTACTO Y FORMULARIO
+   -------------------------------------------------------------------------- */
+.contact-input-icon {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* --------------------------------------------------------------------------
+   6. FOOTER Y REDES SOCIALES
+   -------------------------------------------------------------------------- */
+.social-link {
+  color: #6c757d;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--bs-primary);
+  transform: translateY(-0.125rem);
+}
