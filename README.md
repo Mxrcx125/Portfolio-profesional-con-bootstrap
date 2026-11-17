@@ -79,7 +79,7 @@ Portfolio/
 3. **Habilidades:** Agrupadas en 6 tarjetas con badges claros: Front-end, Back-end, Bases de datos, Herramientas & Entornos, Idiomas y Competencias transversales.
 4. **Proyectos:** 3 tarjetas con imágenes proporcionadas, tecnologías utilizadas en badges, enlaces a código en GitHub, demos y botones con modal interactivo con detalles técnicos adicionales.
 5. **Formación y experiencia:** Acordeón interactivo de Bootstrap que desglosa el CFGS DAW en MEDAC, experiencia laboral previa, certificaciones técnicas (OpenWebinars) y estudios académicos.
-6. **Contacto:** Formulario funcional con validación visual nativa de Bootstrap y atributos `autocomplete`, junto a accesos directos a correo electrónico, LinkedIn, GitHub y teléfono.
+6. **Contacto:** Formulario funcional con validación visual nativa de Bootstrap y atributos `autocomplete`, junto a accesos directos a correo electrónico, GitHub y teléfono.
 7. **Footer:** Aviso de copyright, fecha de última actualización e iconos de redes con `aria-label` descriptivos.
 
 ---
@@ -110,4 +110,4 @@ Se han realizado y superado todas las auditorías y pruebas exigidas en la rúbr
 
 **Autor:** Marco García Ruiz  
 **Estudios:** 2.º CFGS Desarrollo de Aplicaciones Web (DAW) · Davante MEDAC (Sevilla)  
-**Contacto:** [marcogr1231@gmail.com](mailto:marcogr1231@gmail.com) · [LinkedIn](https://www.linkedin.com/in/marco-garcia-ruiz) · [GitHub](https://github.com/Mxrcx125)
+**Contacto:** [marcogr1231@gmail.com](mailto:marcogr1231@gmail.com) · [GitHub](https://github.com/Mxrcx125)
