@@ -18,14 +18,15 @@ El objetivo es tener una carta de presentación limpia y profesional donde mostr
 - **Bootstrap 5.3 (CDN):** Maquetación con rejilla responsive (`container`, `row`, `col-*`), utilidades de espaciado y flexbox, y componentes oficiales (navbar colapsable, tarjetas, badges, modales, acordeón y formulario con validación).
 - **Bootstrap Icons:** Iconografía visual complementada con atributos de accesibilidad (`aria-hidden="true"`).
 - **CSS propio (`css/estilos.css`):** Personalización mínima y limpia enlazada tras Bootstrap, usando variables CSS de Bootstrap (`--bs-primary`, `--bs-body-font-family`, `--bs-link-color`), scroll compensado para navbar fija (`sticky-top`), indicador de foco visible y unidades relativas (`rem`, `%`).
-- **JavaScript nativo (`js/main.js`):** Validación en cliente del formulario de contacto mediante clases Bootstrap (`was-validated`) y cierre automático del menú móvil al pulsar un enlace.
+- **JavaScript nativo (`js/main.js`):** Alternancia accesible entre **modo claro y oscuro** (`data-bs-theme`) con persistencia en `localStorage`, validación en cliente del formulario de contacto mediante clases Bootstrap (`was-validated`) y cierre automático del menú móvil al pulsar un enlace.
 
 ---
 
 ## 🎨 Paleta de colores y ratios de contraste (WCAG 2.1 AA)
 
-Para asegurar un diseño limpio y una lectura accesible para cualquier persona, la paleta se compone de un color de marca principal y tonos neutros. Todas las combinaciones han sido comprobadas con la herramienta **WebAIM Contrast Checker** cumpliendo el nivel **AA** (mínimo 4.5:1 en texto normal y 3:1 en texto grande):
+Para asegurar un diseño limpio y una lectura accesible para cualquier persona, la paleta se compone de un color de marca principal y tonos neutros, tanto en **modo claro** como en **modo oscuro**. Todas las combinaciones han sido comprobadas con la herramienta **WebAIM Contrast Checker** cumpliendo el nivel **AA** (mínimo 4.5:1 en texto normal y 3:1 en texto grande e iconos):
 
+### Modo Claro (tema predeterminado)
 | Elemento / Uso | Color Texto / Primer plano | Color Fondo | Ratio de Contraste | Nivel WCAG |
 | :--- | :--- | :--- | :--- | :--- |
 | **Botones y enlaces principales** | Blanco (`#ffffff`) | Azul marca (`#0b5ed7`) | **5.82 : 1** | Supera AA ✅ |
@@ -34,6 +35,14 @@ Para asegurar un diseño limpio y una lectura accesible para cualquier persona, 
 | **Texto secundario y subtítulos** | Gris medio (`#495057`) | Fondo blanco (`#ffffff`) | **7.37 : 1** | Supera AAA ✅ |
 | **Badges secundarios** | Blanco (`#ffffff`) | Gris medio (`#495057`) | **7.37 : 1** | Supera AAA ✅ |
 | **Enlaces de texto en contenido** | Azul marca (`#0b5ed7`) | Fondo blanco (`#ffffff`) | **5.82 : 1** | Supera AA ✅ |
+
+### Modo Oscuro
+| Elemento / Uso | Color Texto / Primer plano | Color Fondo | Ratio de Contraste | Nivel WCAG |
+| :--- | :--- | :--- | :--- | :--- |
+| **Texto de cuerpo principal** | Gris claro (`#dee2e6`) | Fondo oscuro (`#212529`) | **12.44 : 1** | Supera AAA ✅ |
+| **Texto secundario y subtítulos** | Gris medio (`#adb5bd`) | Fondo oscuro (`#212529`) | **7.88 : 1** | Supera AAA ✅ |
+| **Enlaces adaptados en modo oscuro** | Azul claro accesible (`#6ea8fe`) | Fondo oscuro (`#212529`) | **6.29 : 1** | Supera AA ✅ |
+| **Botones principales** | Blanco (`#ffffff`) | Azul marca (`#0b5ed7`) | **5.82 : 1** | Supera AA ✅ |
 
 *Nota: La información nunca se transmite únicamente a través del color, apoyándose siempre en texto y etiquetas descriptivas.*
 
@@ -65,7 +74,7 @@ Portfolio/
 
 ## 📄 Secciones del portfolio
 
-1. **Navbar fija (`sticky-top`):** Nombre personal, navegación a cada sección y botón hamburguesa colapsable para pantallas pequeñas.
+1. **Navbar fija (`sticky-top`):** Nombre personal, navegación a cada sección, botón interactivo para alternar entre modo claro y modo oscuro, y menú responsive colapsable.
 2. **Portada / Sobre mí:** Fotografía personal en círculo, titular profesional (`Desarrollador Web Junior · Estudiante de DAW`), resumen formativo y botones de acción ("Ver proyectos" y "Descargar CV").
 3. **Habilidades:** Agrupadas en 6 tarjetas con badges claros: Front-end, Back-end, Bases de datos, Herramientas & Entornos, Idiomas y Competencias transversales.
 4. **Proyectos:** 3 tarjetas con imágenes proporcionadas, tecnologías utilizadas en badges, enlaces a código en GitHub, demos y botones con modal interactivo con detalles técnicos adicionales.
